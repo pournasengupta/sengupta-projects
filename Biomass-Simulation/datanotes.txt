@@ -1,0 +1,18 @@
+- Daily Light Integral (DLI)
+    DLI = total amount of light received/day 
+    -> for each plant 
+    compare DLI with water (mm/day) 
+(https://www.farmersweekly.co.za/agri-technology/farming-for-tomorrow/light-effects-plant-growth/#:~:text=A%20general%20rule%20of%20thumb,sufficient%20light%20in%20the%20greenhouse.)
+
+
+- 
+(https://academic.oup.com/aobpla/article/10/5/ply052/5095468)
+
+-
+(https://www.education.com/science-fair/article/light-affects-plant-growth/)
+
+-
+(https://aggie-horticulture.tamu.edu/ornamental/a-reference-guide-to-plant-care-handling-and-merchandising/light-temperature-and-humidity/)
+
+-
+(http://www.plantphysiol.org/content/plantphysiol/19/1/117.full.pdf)
