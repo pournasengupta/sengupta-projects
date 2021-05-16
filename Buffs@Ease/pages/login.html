@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>Buffs @ Ease</title>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- STYLESHEET LINKS -->
+
+        <!--W3-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--GOOGLE FONT-->
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+        <!--FONT ASWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <!-- BootstrapCDN CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!--LOCAL STYLESHEET-->
+        <link rel="stylesheet" type="text/css" href="https://buffs-ease.github.io/buffapp/resources/css/cuapp.css">
+
+    </head>
+    
+    <body>
+        <!-- Navigation Bar -->
+        <div class="nav" id="navbar">
+            <a href="javascript:void(0);" class="icon" onclick="respNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/login.html" class="active"><img src="https://buffs-ease.github.io/buffapp/resources/img/logo.png" style="border-radius:50%; height:75px; width:75px;"></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/home.html"><i class="fa fa-home"> <h4>Home</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/profile.html"><i class="fa fa-user-alt"><h4>Profile</h4></i></a>
+        </div>
+        
+        <!-- Page Content -->
+        <div class="content">  
+            <section class="gold">
+                <form class="center"> 
+                    <div class="container">
+                        <img src="https://buffs-ease.github.io/buffapp/resources/img/logo.png" alt="Avatar" class="avatar" style="border-radius: 50%; max-width:100% ; max-height: 100%;">
+                        <br> <br> 
+                        <label for="uname" style="color: black; text-shadow: 1px 1px silver;"><h3><strong>Username</strong></h3></label>
+                        <input class="section-text" type="text" placeholder="Username" name="uname" required>
+                  
+                        <label for="psw" style="color: black; text-shadow: 1px 1px silver;"><h3><strong>Password</strong></h3></label>
+                        <input class="section-text" type="password" placeholder="Password" name="psw" required>
+                          
+                        <button class="section-text" type="submit" style="color: white;">Login</button>
+                        <label>
+                          <input class="section-text" type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                </form>
+            </section> 
+
+            <section class="gold"> 
+                <h2 class="title center"> Welcome to Buffs @ Ease!</h2>
+                <h4 class="subtitle center"> Navigate the CU Boulder Campus, learn about campus events, and helpful resources to guide you through your college experience, all in one place. </h4>
+            </section>
+            <section class="silver"> 
+                <h2 class="title center"> New to Buffs @ Ease?</h2>
+                <button class="subtitle center" onclick="document.getElementById('id01').style.display='block'" style="width:auto; color: white;">Sign Up</button>
+            </section>
+        </div>
+
+
+        <div id="id01" class="modal">
+            <section class="silver">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="https://buffs-ease.github.io/buffapp/pages/profile.html">
+                  <div class="container">
+                    <h1 class="title" style="color: white;">Sign Up</h1>
+                    <p class="subtitle" style="color: white;">Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="email" class="section-text" style="color: white;"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+              
+                    <label for="psw" class="section-text" style="color: white;"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                    <label for="psw-repeat" class="section-text" style="color: white;"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+                        
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="color: white;">Cancel</button>
+                      <button type="submit" class="signupbtn" style="color: white;">Sign Up </button>
+                    </div>
+                  </div>
+                </form>
+            </section>
+          </div>
+
+        <!-- Footer -->
+        <div class="w3-container footer">
+            <p>Created By Name Pending <a href="https://github.com/CSCI-3308-CU-Boulder/Name-Pending" target="_blank" class="link">Github</a></p>
+        </div>
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- BootstrapCDN JavaScript-->    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!--Local JS-->
+        <script src="https://buffs-ease.github.io/buffapp/resources/js/cuapp.js"></script>
+    </body>
+</html> 
+

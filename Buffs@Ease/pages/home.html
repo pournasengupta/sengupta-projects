@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>Buffs @ Ease</title>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- STYLESHEET LINKS -->
+
+        <!--W3-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--GOOGLE FONT-->
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+        <!--FONT ASWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <!-- BootstrapCDN CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!--LOCAL STYLESHEET-->
+        <link rel="stylesheet" type="text/css" href="https://buffs-ease.github.io/buffapp/resources/css/cuapp.css">
+
+    </head>
+    
+    <body>
+        <!-- Navigation Bar -->
+        <div class="nav" id="navbar">
+            <a href="javascript:void(0);" class="icon" onclick="respNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/login.html"><img src="https://buffs-ease.github.io/buffapp/resources/img/logo.png" style="border-radius:50%; height:75px; width:75px;"></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/home.html" class="active"><i class="fa fa-home"> <h4>Home</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/map.html" target="popup" 
+            onclick="window.open('https://buffs-ease.github.io/buffapp/pages/map.html','popup','width=1200,height=1200'); return false;"><i class="fa fa-map"> <h4>Campus Map</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/covid.html"><i class="fa fa-disease"> <h4>COVID-19 Info</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/resources.html"><i class="fa fa-info-circle"><h4>Resources</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/explore.html"><i class="fa fa-search"><h4>Explore</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/profile.html"><i class="fa fa-user-alt"><h4>Profile</h4></i></a>
+        </div>
+        
+        <!-- Page Content -->
+        <div class="content">
+            <section class="gold"> 
+                <h2 class="center title"><strong>Have you filled out your Daily Health Questionnaire today?</strong></h2>
+                <h4 class="center link"> <a class ="link" href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form" target="popup"
+                onclick="window.open('https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form','popup','width=600,height=600'); return false;"> Click here to fill it out! </a></h4>
+            </section>
+
+            <section class="silver"> 
+                <button onclick="window.open('https://www.colorado.edu/covid-19-ready-dashboard', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-left-align subtitle"><i class="fa fa-info-circle fa-fw"></i> COVID-19 Dashboard</button>
+                <div id="covid-dash" class="w3-hide w3-container"></div>
+                <button onclick="window.open('https://www.colorado.edu/today/', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-left-align subtitle"><i class="fa fa-external-link-alt fa-fw"></i> CU Boulder Today</button>
+                <div id="cu-today" class="w3-hide w3-container"></div>
+                <button onclick="window.open('https://calendar.colorado.edu/virtual-events', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-left-align subtitle"><i class="fa fa-calendar-alt fa-fw"></i> CU Virtual Events </button>
+                <div id="cu-events" class="w3-hide w3-container"></div>
+            </section>
+
+            <section class="gold infograph"> 
+                <h5 class="center title">To-Do List</h5>
+                                  
+                <div>
+                <label class="center subtitle">What do you have to do today?</label>
+                <textarea class="center" style="border-radius: 12px;" rows="1"></textarea>
+                <br><button class="center" type="submit" style="border-radius: 12px;">ADD</button>
+                <br><br>
+                
+                <ul>
+                </ul>  
+            </section>
+
+            <section class="gold infograph"> 
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23F6BF26&amp;ctz=America%2FDenver&amp;src=Y18zcXM4OGhsMDZrbzI1MzBlbHM5YXJkZjRqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23F6BF26&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK" style="border-width:0;" width="675" height="600" frameborder="0" scrolling="no"></iframe>
+            </section>
+
+            <section class="silver infograph"> 
+                <iframe src="https://public.domo.com/cards/axpDJ" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+            </section>
+
+            <section class="silver infograph"> 
+                <iframe src="https://public.domo.com/cards/aOm4g" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+            </section>            
+        </div>
+          
+        <!-- Footer -->
+        <div class="w3-container footer">
+        <p>Created By Name Pending <a href="https://github.com/CSCI-3308-CU-Boulder/Name-Pending" target="_blank" class="link">Github</a></p>
+        </div>
+        
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- BootstrapCDN JavaScript-->    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!--Local JS-->
+        <script src="https://buffs-ease.github.io/buffapp/resources/js/cuapp.js"></script>
+    </body>
+</html> 
+

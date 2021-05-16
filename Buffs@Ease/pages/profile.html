@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>Buffs @ Ease</title>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- STYLESHEET LINKS -->
+
+        <!--W3-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--GOOGLE FONT-->
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+        <!--FONT ASWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <!-- BootstrapCDN CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!--LOCAL STYLESHEET-->
+        <link rel="stylesheet" type="text/css" href="https://buffs-ease.github.io/buffapp/resources/css/cuapp.css">
+
+    </head>
+    
+    <body>
+        <!-- Navigation Bar -->
+        <div class="nav" id="navbar">
+            <a href="javascript:void(0);" class="icon" onclick="respNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/login.html"><img src="https://buffs-ease.github.io/buffapp/resources/img/logo.png" style="border-radius:50%; height:75px; width:75px;"></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/home.html"><i class="fa fa-home"> <h4>Home</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/map.html" target="popup" 
+            onclick="window.open('https://buffs-ease.github.io/buffapp/pages/map.html','popup','width=1200,height=1200'); return false;"><i class="fa fa-map"> <h4>Campus Map</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/covid.html"><i class="fa fa-disease"> <h4>COVID-19 Info</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/resources.html"><i class="fa fa-info-circle"><h4>Resources</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/explore.html"><i class="fa fa-search"><h4>Explore</h4></i></a>
+            <a href="https://buffs-ease.github.io/buffapp/pages/profile.html" class="active"><i class="fa fa-user-alt"><h4>Profile</h4></i></a>
+        </div>
+        <br> 
+        <br> 
+        <!-- Page Content -->
+        <img src="https://buffs-ease.github.io/buffapp/resources/img/user.png" class="center" style="border-radius: 50%; max-width:15% ; max-height: 15%;">
+        <div class="center"> 
+          <p> <h3 class="title" style="color: white;"> John Doe </h3> </p>
+        </div>
+        <div class="center"> 
+          <p> <h4 class="subtitle" style="color: white;"> jodo1234 </h4> </p>
+        </div>
+        <div class="content">  
+            <section class="silver"> 
+                <table id="user">
+                    <tr>
+                      <th>Username</th>
+                      <td> John Doe</td>
+                    </tr>
+                    <tr>
+                      <th>Email</th>
+                      <td>jodo1234@colorado.edu</td>
+                    </tr>
+                    <tr>
+                      <th>Phone Number</th>
+                      <td>(303)-555-1234</td>
+                    </tr>
+                    <tr>
+                      <th>Account Type</th>
+                      <td>Student</td>
+                    </tr>
+                  </table>
+            </section>
+            <br><br>
+            <section class="silver"> 
+                <table id="courses">
+                    <tr>
+                        <th>Courses</th>
+                        <th> Date/Time</th>
+                      </tr>
+                    <tr>
+                      <td>PHIL 2100</td>
+                      <td> TU/TH 9 - 9:50 AM</td>
+                    </tr>
+                    <tr>
+                      <td>MATH 2300</td>
+                      <td>TU/TH 12 - 12:20 PM</td>
+                    </tr>
+                    <tr>
+                      <td>EBIO 1940</td>
+                      <td>M/W/F 1 - 1:50 PM</td>
+                    </tr>
+                    <tr>
+                      <td>ASTR 1040</td>
+                      <td>M/W/F 3 - 3:45 PM</td>
+                    </tr>
+                  </table>
+            </section>
+            <br><br>
+            <section class="silver"> 
+                <table id="favloc">
+                    <tr>
+                        <th> Location </th>
+                    </tr>
+                    <tr>
+                      <td>ECCR</td>
+                    </tr>
+                    <tr>
+                      <td>UMC</td>
+                    </tr>
+                    <tr>
+                      <td>MUEN</td>
+                    </tr>
+                    <tr>
+                      <td>FISK</td>
+                    </tr>
+                  </table>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="w3-container footer">
+            <p>Created By Name Pending <a href="https://github.com/CSCI-3308-CU-Boulder/Name-Pending" target="_blank" class="link">Github</a></p>
+        </div>
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- BootstrapCDN JavaScript-->    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!--Local JS-->
+        <script src="https://buffs-ease.github.io/buffapp/resources/js/cuapp.js"></script>
+    </body>
+</html> 
+
